@@ -34,6 +34,18 @@ spec:
       matchLabels:
         os: linux
         arch: amd64
+  - uri: https://github.com/DataDog/extendeddaemonset/releases/download/PLACEHOLDER_TAG/kubectl-eds_PLACEHOLDER_VERSION_linux_arm64.zip
+    sha256: "PLACEHOLDER_SHA_LINUX_ARM"
+    bin: kubectl-eds
+    files:
+    - from: kubectl-eds
+      to: .
+    - from: LICENSE
+      to: .
+    selector:
+      matchLabels:
+        os: linux
+        arch: arm64
   - uri: https://github.com/DataDog/extendeddaemonset/releases/download/PLACEHOLDER_TAG/kubectl-eds_PLACEHOLDER_VERSION_windows_amd64.zip
     sha256: "PLACEHOLDER_SHA_WINDOWS"
     bin: kubectl-eds.exe
