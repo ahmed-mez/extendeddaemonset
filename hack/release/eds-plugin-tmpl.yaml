@@ -8,9 +8,9 @@ spec:
   description: |
     The ExtendedDaemonset kubectl plugin provides useful utilities to operate daemonsets
     via the ExtendedDaemonset controller and the ExtendedDaemonset CRD.
-  homepage: https://github.com/DataDog/extendeddaemonset
+  homepage: https://github.com/ahmed-mez/extendeddaemonset
   platforms:
-  - uri: https://github.com/DataDog/extendeddaemonset/releases/download/PLACEHOLDER_TAG/kubectl-eds_PLACEHOLDER_VERSION_darwin_amd64.zip
+  - uri: https://github.com/ahmed-mez/extendeddaemonset/releases/download/PLACEHOLDER_TAG/kubectl-eds_PLACEHOLDER_VERSION_darwin_arm64.zip
     sha256: "PLACEHOLDER_SHA_DARWIN"
     bin: kubectl-eds
     files:
@@ -21,28 +21,4 @@ spec:
     selector:
       matchLabels:
         os: darwin
-        arch: amd64
-  - uri: https://github.com/DataDog/extendeddaemonset/releases/download/PLACEHOLDER_TAG/kubectl-eds_PLACEHOLDER_VERSION_linux_amd64.zip
-    sha256: "PLACEHOLDER_SHA_LINUX"
-    bin: kubectl-eds
-    files:
-    - from: kubectl-eds
-      to: .
-    - from: LICENSE
-      to: .
-    selector:
-      matchLabels:
-        os: linux
-        arch: amd64
-  - uri: https://github.com/DataDog/extendeddaemonset/releases/download/PLACEHOLDER_TAG/kubectl-eds_PLACEHOLDER_VERSION_windows_amd64.zip
-    sha256: "PLACEHOLDER_SHA_WINDOWS"
-    bin: kubectl-eds.exe
-    files:
-    - from: kubectl-eds.exe
-      to: .
-    - from: LICENSE
-      to: .
-    selector:
-      matchLabels:
-        os: windows
-        arch: amd64
+        arch: arm64
